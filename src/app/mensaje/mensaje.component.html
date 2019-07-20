@@ -1,0 +1,18 @@
+<div class="messageContainer"
+     [ngClass]="{'isOwnMessageContainer':esPropio}">
+  <div class="messageData"
+       [ngClass]="{'isOwnMessageData':esPropio}">
+    <span class="sender"
+          [ngClass]="{'isOwnSender':esPropio}">
+      {{ nombreUsuario }}
+    </span>
+    <span class="timestamp"
+          [ngClass]="{'isOwnTimestamp':esPropio}">
+      {{ hora | date:'medium' }}
+    </span>
+  </div>
+  <div class="messageContent"
+       [ngClass]="{'isOwnMessageContent':esPropio}">
+    {{ contenidoMensaje }}
+  </div>
+</div>

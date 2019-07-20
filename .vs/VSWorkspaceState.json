@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\Servicios",
+    "\\src\\environments"
+  ],
+  "SelectedNode": "\\src\\app\\Servicios\\chat.service.ts",
+  "PreviewInSolutionExplorer": false
+}

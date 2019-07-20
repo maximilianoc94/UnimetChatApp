@@ -1,0 +1,11 @@
+<div class="chatFormWrapper">
+  <input
+    class="chatInput"
+    [(ngModel)]="mensaje"
+    (keydown)="handleSubmit($event)"
+  />
+
+  <button class="chatButton" (click)="enviar()">
+    Enviar
+  </button>
+</div>

@@ -1,0 +1,23 @@
+<div class="navBar grey darken-3">
+  <div id="heading"><a routerLink="/"><span class="flow-text" style="color: #F37D01;">UNIMET</span><span class="flow-text" style="color: whitesmoke;">Chat</span></a></div>
+  <div class="links">
+    <span>
+      <a *ngIf="!(usuario|async)?.uid" href="" (click)="login()">Entrar</a>
+    </span>
+    <span>
+      <a *ngIf="!(usuario|async)?.uid" routerLink="/registro">Registrarse</a>
+    </span>
+    <span>
+      <span id="userEmail" *ngIf="(usuario|async)?.uid">Bienvenido, {{email}}</span>
+    </span>
+    <span>
+      <span>
+        <a *ngIf="(usuario|async)?.uid" routerLink="/perfil">Perfil</a>
+      </span>
+      <span>
+        <a *ngIf="(usuario|async)?.uid" routerLink="/chat">Chat</a>
+      </span>
+      <a *ngIf="(usuario|async)?.uid" href="#" (click)="logout()">Salir</a>
+    </span>
+  </div>
+</div>

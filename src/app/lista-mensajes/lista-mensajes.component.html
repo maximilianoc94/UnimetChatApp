@@ -1,0 +1,5 @@
+<div class="feed">
+  <div *ngFor="let mensaje of listaMensajes | async" class="message">
+    <app-mensaje [mensaje]=mensaje></app-mensaje>
+  </div>
+</div>

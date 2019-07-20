@@ -1,0 +1,30 @@
+<div class="container2">
+  <div class="signUpCard" style="padding: 10px">
+    <!-- <app-upload></app-upload> -->
+    <form #signupForm="ngForm">
+      <h2 class="flow-text" style="height:30px; margin:10px">
+        Cambia tu nombre!
+      </h2>
+
+      <label class="label">Nombre</label>
+      <input
+        name="displayName"
+        placeholder="Introduce tu nuevo nombre"
+        [(ngModel)]="nombre"
+        class="formInput"
+        maxlength="30"
+        required
+      />
+
+      <button
+        [disabled]="!signupForm.form.valid"
+        type="submit"
+        (click)="actualizar()"
+        class="btn"
+        id="btn-signUp"
+      >
+        Actualizar
+      </button>
+    </form>
+  </div>
+</div>
